@@ -2,7 +2,7 @@
 # WorldWise
 
 Worldwise built with React , TS , Vite and CSS along with a fake JSON-SERVER API.  
-https://www.omdbapi.com/
+
 
 
 Click [Demo](https://worldwise-b070.onrender.com) to see the live project.
