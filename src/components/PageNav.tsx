@@ -9,7 +9,9 @@ const PageNav: React.FC = () => {
   return (
     <div className={styles.container}>
       <div>
-        <NavLink to="/"> <img src="../../public/logo.png" alt="" /></NavLink>
+    <NavLink to="/">
+  <img src="/logo.png" alt="Logo" />
+    </NavLink>
       </div>
       <nav>
         <ul>
