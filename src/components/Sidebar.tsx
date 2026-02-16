@@ -11,7 +11,9 @@ const Sidebar : React.FC = () => {
 
 return (
   <div className={styles.sidebar}>
-        <NavLink to="/"> <img src="../../public/logo.png" alt="" /></NavLink>
+  <NavLink to="/">
+  <img src="/logo.png" alt="Logo" />
+    </NavLink>
 
         <AppNav/>
 
