@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2025-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": "17806751"
+    },
+    {
+      "id": "2d6e",
+      "cityName": "Munich",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2026-02-15T15:26:35.962Z",
+      "notes": "Amazing",
+      "position": {
+        "lat": 48.127580955301056,
+        "lng": 11.55290782328057
+      }
+    },
+    {
+      "id": "58f9",
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2026-02-15T15:27:07.652Z",
+      "notes": "Nice",
+      "position": {
+        "lat": 52.49124498184041,
+        "lng": 13.371744701352291
+      }
+    },
+    {
+      "id": "b9eb",
+      "cityName": "Torpes",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2026-02-15T15:28:22.083Z",
+      "notes": "",
+      "position": {
+        "lat": 46.84390776131359,
+        "lng": 5.320427421923974
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.pricing {
+  margin: 2.5rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--color-dark--1);
+  min-height:  100vh;
+  border-radius: 15px;
+}
+
+.content {
+  display: flex;
+  gap: 4rem;
+  margin-top: 50px;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.content img {
+  width: 365px;
+  height: 365px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  font-size: 2rem;
+}
+
+.content p , h2 {
+font-size: 1rem;
+color: #ECECECEC;
+line-height: 2;
+}

@@ -1,0 +1,56 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
+
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--0: #242a2e;
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: #d6dee0;
+}
+
+* , *::before , *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family :Arial, Helvetica, sans-serif ;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+border: none;
+outline: none;
+border-radius: 10px;
+background-color: var(--color-brand--2);
+padding: 0.9em;
+cursor: pointer;
+}
+
+.active {
+  color: var(--color-brand--2) !important;
+}
