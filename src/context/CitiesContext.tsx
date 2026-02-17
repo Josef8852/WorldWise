@@ -1,8 +1,9 @@
-import { createContext , useEffect  , useState} from "react";
+import { createContext , useEffect , useCallback , useState} from "react";
 import { CityObj , CitiesProviderProps , CitiesContextChildren, NewCity } from "../types/types";
 
 
-const BASE_URL: string = ""; /* JSON SERVER */
+const BASE_URL: string = ""; 
+/*const BASE_URL: string = "http://localhost:9000";  JSON SERVER */
 
 const CitiesContext = createContext<CitiesContextChildren | undefined>(undefined);
 
@@ -28,7 +29,10 @@ const CitiesProvider = ({children} : CitiesProviderProps) => {
   }, []);
 
 
-  const getCity =  async (id: string) :Promise<void> => {
+  const getCity = useCallback(async (id: string): Promise<void> => {
+    
+    if (id === currentCity?.id) return;
+    
     try {
       setIsloading(true);
       const res = await fetch(`${BASE_URL}/cities/${id}`);
@@ -48,7 +52,7 @@ const CitiesProvider = ({children} : CitiesProviderProps) => {
     finally {
       setIsloading(false);
     }
-    };
+    }, [currentCity?.id]);
   
   const createCity =  async (newCity : NewCity) : Promise<void> => {
     try {

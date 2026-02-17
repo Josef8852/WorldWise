@@ -22,7 +22,7 @@ const CityInfo : React.FC = () => {
     
     getCity(id);
     
-  } ,[id]);
+  } ,[id ,getCity]);
   
   
   
