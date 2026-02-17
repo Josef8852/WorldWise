@@ -1,16 +1,19 @@
+import { lazy ,Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Pricing from "./pages/Pricing";
-import Product from "./pages/Product";
-import AppLayout from "./pages/AppLayout";
-import Login from "./pages/Login";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
 import CityInfo from "./components/CityInfo";
-import PageNotFound from "./pages/PageNotFound";
 import Form from "./components/Form";
 import { CitiesProvider } from "./context/CitiesContext";
+import SpinnerFullPage from "./components/SpinnerFullPage";
 
+// Lazy loading
+const HomePage = lazy(() => import("./pages/HomePage"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Login = lazy(() => import("./pages/Login"));
+const Product = lazy(() => import("./pages/Product"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 const App: React.FC = () => {
 
@@ -18,7 +21,8 @@ const App: React.FC = () => {
   return (
     /* React Router */
     <CitiesProvider>
-    <BrowserRouter>
+      <BrowserRouter>
+      <Suspense fallback = {<SpinnerFullPage/>}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<Pricing />} />
@@ -39,7 +43,8 @@ const App: React.FC = () => {
         </Route>
 
         <Route path="/login" element={<Login />} />
-      </Routes>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </CitiesProvider>
   );
