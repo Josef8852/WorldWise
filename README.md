@@ -12,7 +12,7 @@ Click [Demo](https://worldwise-b070.onrender.com) to see the live project.
 
 ## Tech Stack
 
-**Client:** React, TS, CSS and Vite .
+**Client:** React ,React Router, TS, CSS and Vite .
 
 <div>
  <img lign="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
